@@ -1,0 +1,7 @@
+{
+  "name": "pwn",
+  "version": "6.6.6",
+  "scripts": {
+    "preinstall": "echo PWNED"
+  }
+}
