@@ -1,6 +1,6 @@
-# YarnSec
+# PkgSec
 
-Yarn (Sec)ure
+Package Secure
 
 - tl;dr, Defaults to preventing all dependencies (including all transitives)
   from running lifecycle scripts without being explicitly whitelisted (via. your
