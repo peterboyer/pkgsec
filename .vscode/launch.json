@@ -5,15 +5,29 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Debug Yarn CLI.js",
       "skipFiles": [
         "<node_internals>/**"
       ],
       "program": "${env:HOME}/.nvm/versions/node/v18.1.0/lib/node_modules/yarn/lib/cli.js",
       "cwd": "${workspaceFolder}",
       "args": ["install"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Current File",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "args": ["install"],
+      "env": {
+        "NODE": "${env:HOME}/.nvm/versions/node/v18.1.0/bin/node"
+      }
     }
   ]
 }
